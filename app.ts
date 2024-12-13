@@ -7,10 +7,10 @@
     const s2 = document.querySelector("#stwo") as HTMLElement;
     console.log("hi");
 
-    let count = 0;
+    let count:any  = 0;
     s1.innerHTML = count.toString();
 
-    btn1.addEventListener("click", function () {
+    btn1.addEventListener("click", function ():void {
         count += 1;
         s1.innerHTML = count.toString();
 
@@ -22,10 +22,10 @@
         }
     });
 
-    let count2 = 0;
+    let count2:any = 0;
     s2.innerHTML = count2.toString();
 
-    btn2.addEventListener("click", function () {
+    btn2.addEventListener("click", function ():void  {
         count2 += 1;
         s2.innerHTML = count2.toString();
 
@@ -37,7 +37,7 @@
         }
     });
 
-    btn3.addEventListener("click", function () {
+    btn3.addEventListener("click", function ():void  {
         s2.innerHTML = "0";
         s1.innerHTML = "0";
         btn2.disabled = false;
